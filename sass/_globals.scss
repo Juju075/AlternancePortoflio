@@ -1,0 +1,146 @@
+@import "_mixins.scss";
+
+/** html + body */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+/** h,a,button*/
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 1.15; // used to set the distance between lines of text.
+  color: $darkBlue;
+  font-size: 2.31rem;
+}
+h1 {
+  margin-bottom: 1.5rem;
+
+  @include breakpoint-up(large) {
+    // Modification de h1 si nouveau breakpoint
+    font-size: $font-xlg;
+  }
+}
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 2.25rem;
+
+  @include breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+//Displays
+.flex {
+  display: flex;
+
+  //Hyperclass
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-content: center;
+  }
+}
+
+button {
+  &:hover {
+  }
+}
+
+/** Hide for */
+.hide-for-mobile {
+  //hide for mobile and tablet button menu
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  //hide for desktop  hamburger
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+/** Spacing set */
+/** 
+1- --pall(padding all)
+2- --py(padding vertical)
+3- --px(padding horizontal)
+4- --pt(padding top)
+5- --pl(padding left)
+6- --pr(padding right)
+7- --pb(padding bottom)
+**/
+
+/** container set */
+.container {
+  //pour centrer la largeur max
+  max-width: 69.56rem;
+  margin: auto;
+
+  //Hyperclass
+  &--pall {
+    padding-top: 4.375rem; // 70px
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--py {
+    // Vertical
+    padding-top: 4.375rem;
+    padding-bottom: 4.375remm;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &--px {
+    //Horizontal
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  &--pt {
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+    }
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
+  &--pr {
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+}
