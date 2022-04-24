@@ -1,0 +1,46 @@
+demo source
+https://qi24.qodeinteractive.com/?_ga=2.105474371.1561627764.1650812536-634986189.1650812536
+
+challenge
+
+supperposition 2 images
+1 reponsive attache top et right png
+
+
+1 section
+1 section - 1 bloc text machine javascipt + button
+1 section - text
+1 section simple - 1 bloc grid 
+
+Techniques::
+
+
+css superimpose image over image
+
+<body>
+  <img src="img/fishes.png" class="fishes" >
+  <img src="img/fish.png" class="fish">
+</body>
+
+
+    .fishes
+    {
+      position:absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+    }
+    .fish
+    {
+      position:absolute;
+      top: 25px;
+      left: 25px;
+      z-index: 2;
+    }
+
+
+
+
+
+
+javascript texte writing
