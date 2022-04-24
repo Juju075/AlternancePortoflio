@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bempime Kheve | Portofolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         {# Mobile First #}
@@ -21,7 +22,9 @@
         <!-- ======================================================================= -->
         <section class="hero">
         <div class="container">
-            <div>Js typing title</div>
+            <div class="typing">
+                <h1>Je suis <span class="auto-type"></span></h1>
+            </div>
             <div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
@@ -98,5 +101,14 @@
             </div>
             <div>copyright made w love 2022</div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            let typed = new typed(".auto-type", {
+                strings : ["integrateur web.","développeur Symfony.","disponible."],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
     </body>
 </html>
