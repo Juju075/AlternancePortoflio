@@ -5,36 +5,60 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bempime Kheve | Portofolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">    
     </head>
     <body>
-        {# Mobile First #}
+        
+        <!-- Mobile First -->
+        <!-- ======================================================================= -->
+        <!-- Img topCorner Right  -->
+        <!-- ======================================================================= -->
+        <section>
+            <div id="content">
+                <img src="/images/home-img1.png" class="ribbon"/>
+            </div>
+        </section>
+
         <!-- ======================================================================= -->
         <!-- Section Header -->
         <!-- ======================================================================= -->
         <header class="header">
-        <div>logo</div>
-        <div>dot link</div>
+            <!-- Navbar Container (1 Ligne ) -->
+            <nav class="container  flex flex-jc-sb flex-ai-c">
+                <a href="/" class="header__logo">
+                    <img src="/images/logo_k_bempime_black.png" alt="logo_bempime_kheve" />
+                </a>   
+                <div class="header__dot">
+                    <img src="/images/dot.png" alt="dot_image">
+                </div>
+            </nav>
         </header>
 
         <!-- ======================================================================= -->
         <!-- Section Hero -->
         <!-- ======================================================================= -->
         <section class="hero">
-        <div class="container">
-            <div class="typing">
-                <h1>Je suis <span class="auto-type"></span></h1>
+            <div class="container">
+
+                <div class="hero__text "> 
+                    
+                    <div class="typing">
+                        <h1>Je suis <span class="auto-type"></span></h1>
+                    </div>
+
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                            amet quos praesentium nam rem sequi animi, esse eos alias, soluta
+                            natus vitae doloremque laborum perferendis repudiandae, nostrum
+                            molestiae voluptatum fugiat?
+                        </p>
+                    </div>
+                    <!-- Button cta -->
+                    <a href="#" class="button">Telecharger mon CV</a>
+                </div>
+ 
             </div>
-            <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                amet quos praesentium nam rem sequi animi, esse eos alias, soluta
-                natus vitae doloremque laborum perferendis repudiandae, nostrum
-                molestiae voluptatum fugiat?
-            </p>
-            </div>
-            <div><button>Discover More</button></div>
-        </div>
         </section>
 
         <!-- ======================================================================= -->
@@ -101,7 +125,12 @@
             </div>
             <div>copyright made w love 2022</div>
         </footer>
+
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
         <script>
             let typed = new typed(".auto-type", {
                 strings : ["integrateur web.","développeur Symfony.","disponible."],
@@ -110,5 +139,8 @@
                 loop: true
             })
         </script>
+
+
+
     </body>
 </html>

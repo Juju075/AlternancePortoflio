@@ -1,0 +1,219 @@
+/*
+*
+*/
+/** mixing name(parametre){ coller bloc code @content contenue d'origine} */
+/** html + body */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/background_bag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: #f3d1ca;
+}
+
+/** h,a,button*/
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 1.15;
+  color: #2d314d;
+  font-size: 2.31rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 2.25rem;
+}
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/** Hide for */
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+/** Description Padding */
+/** 
+1- --pall(padding all)
+2- --py(padding vertical)
+3- --px(padding horizontal)
+4- --pt(padding top)
+5- --pl(padding left)
+6- --pr(padding right)
+7- --pb(padding bottom)
+**/
+/** Containe Spacing*/
+.container {
+  border-color: 2px solid green;
+  max-width: 100%;
+  margin: auto;
+}
+.container--pall {
+  padding-top: 0rem;
+  padding-bottom: 4.375rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.container--py {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375remm;
+}
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.container--px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.container--pt {
+  padding-top: 4.375rem;
+}
+@media (min-width: 64em) {
+  .container--pt {
+    padding-top: 6rem;
+  }
+}
+.container--pl {
+  padding-left: 1.5rem;
+}
+.container--pr {
+  padding-right: 1.5rem;
+}
+.container--pb {
+  padding-bottom: 4.375rem;
+}
+@media (min-width: 64em) {
+  .container--pb {
+    padding-bottom: 6rem;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: space-between;
+}
+.flex-ai-c {
+  align-content: center;
+}
+
+.header {
+  border-color: 2px solid red;
+}
+.header__logo img {
+  width: 10rem;
+  height: 3rem;
+}
+.header__dot img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero {
+  border: 6px solid red;
+}
+.hero__image {
+  border: 8px solid magenta;
+  /* Image de Fond */
+  position: relative;
+  background-image: url("/images/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5em;
+}
+.hero__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.hero__image::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-image: url("/images/home-img1.png");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: bottom 0px;
+}
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+.hero .typing {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .typing h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+.hero span {
+  color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

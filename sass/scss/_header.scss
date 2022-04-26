@@ -1,0 +1,19 @@
+//Section
+//Container (globals)
+//Element &__ > balise
+.header {
+  border-color: 2px solid red;
+
+  &__logo {
+    img {
+      width: 10rem;
+      height: 3rem;
+    }
+  }
+  &__dot {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

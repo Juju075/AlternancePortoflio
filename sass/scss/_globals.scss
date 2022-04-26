@@ -6,7 +6,27 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background-image: url(/images/background_bag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; //100% heigh of current viewport.
+  background-color: #f3d1ca;
+}
+
+/** img top corner*/
+#content {
+  position: relative;
+}
+#content img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 /** h,a,button*/
@@ -44,22 +64,6 @@ a:hover {
   color: white;
 }
 
-//Displays
-.flex {
-  display: flex;
-
-  //Hyperclass
-  &-jc-sb {
-    justify-content: space-between;
-  }
-  &-jc-c {
-    justify-content: space-between;
-  }
-  &-ai-c {
-    align-content: center;
-  }
-}
-
 button {
   &:hover {
   }
@@ -79,7 +83,7 @@ button {
   }
 }
 
-/** Spacing set */
+/** Description Padding */
 /** 
 1- --pall(padding all)
 2- --py(padding vertical)
@@ -90,15 +94,17 @@ button {
 7- --pb(padding bottom)
 **/
 
-/** container set */
+/** Containe Spacing*/
 .container {
+  border-color: 2px solid green;
+
   //pour centrer la largeur max
-  max-width: 69.56rem;
+  max-width: 100%;
   margin: auto;
 
   //Hyperclass
   &--pall {
-    padding-top: 4.375rem; // 70px
+    padding-top: 0rem; // 70px
     padding-bottom: 4.375rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -108,6 +114,7 @@ button {
       padding-bottom: 6rem;
     }
   }
+
   &--py {
     // Vertical
     padding-top: 4.375rem;
@@ -142,5 +149,21 @@ button {
     @include breakpoint-up(large) {
       padding-bottom: 6rem;
     }
+  }
+}
+
+//Display
+.flex {
+  display: flex;
+
+  //Hyperclass
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-content: center;
   }
 }

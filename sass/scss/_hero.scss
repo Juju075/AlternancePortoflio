@@ -1,0 +1,73 @@
+.hero {
+  border: 6px solid red;
+
+  .container {
+    border: 4px solid magenta;
+  }
+
+  &__text {
+    border: 2px solid blue;
+    p {
+    }
+    span {
+    }
+  }
+
+  .typing {
+    border: 4px solid green;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    background-color: transparent;
+    color: magenta;
+    display: flex;
+  }
+
+  .typing h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: black;
+  }
+
+  &__image {
+    /* Image de Fond */
+    position: relative;
+    background-image: url("/images/");
+    background-size: cover; // couvre tous l'espace dispo
+    background-repeat: no-repeat;
+    background-position: center center; //sets the initial position for each background image.
+    min-height: 17.5em;
+
+    //Image
+    &::before {
+      content: ""; //content sinon n'apparait pas dans la page.
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("/images/");
+      background-size: 93%;
+      background-repeat: no-repeat;
+      background-position: center bottom; // Initial Position
+    }
+    // Image Mockup
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      background-image: url("/images/home-img1.png");
+      background-size: 93%;
+      background-repeat: no-repeat;
+      background-position: bottom 0px;
+    }
+  }
+
+  &__text {
+    // centrer
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 2.25rem;
+    }
+  }
+}
